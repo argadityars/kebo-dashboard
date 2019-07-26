@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap");
 @import "variable";
 @import "base";
 
@@ -10,6 +11,8 @@ body {
  */
 .kebo-wrapper {
 	height: 100vh;
+	display: flex;
+	flex-direction: row;
 }
 
 /*
@@ -17,13 +20,52 @@ body {
  */
 .kebo-sidebar {
 	height: 100%;
-	width: 60px;
-	padding: $spacing $spacing/2;
+	width: 80px;
+	padding: $spacer;
+	background-color: #0e1230;
+}
+
+/*
+ * Middlebar
+ */
+.kebo-middlebar {
+	height: 100%;
+	width: 380px;
+	padding: 0 $spacer;
+	background-color: #131a3d;
+
+	.navbar {
+		height: 56px;
+		display: flex;
+		align-items: center;
+	}
+
+	.kebo-logo-text {
+		color: $white;
+		font-size: 1.3rem;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
 }
 
 /*
  * Main page content
  */
 .kebo-main {
-	padding: $spacing $spacing/2;
+	width: 100%;
+
+	.navbar {
+		height: 56px;
+		display: flex;
+		align-items: center;
+		border-bottom: 1px solid $gray-200;
+	}
+}
+
+.kebo-content-header {
+	padding: $spacing;
+	background-color: #fff;
+	border-bottom: 1px solid $gray-200;
 }
