@@ -1,0 +1,29 @@
+@import "variable";
+@import "base";
+
+body {
+	background-color: $light;
+}
+
+/*
+ * Main page wrapper
+ */
+.kebo-wrapper {
+	height: 100vh;
+}
+
+/*
+ * Sidebar
+ */
+.kebo-sidebar {
+	height: 100%;
+	width: 60px;
+	padding: $spacing $spacing/2;
+}
+
+/*
+ * Main page content
+ */
+.kebo-main {
+	padding: $spacing $spacing/2;
+}
