@@ -63,6 +63,19 @@ body {
 		display: flex;
 		align-items: center;
 		border-bottom: 1px solid $gray-200;
+
+		.navbar-list {
+			display: flex;
+			flex-direction: row;
+			margin-left: auto;
+			margin-bottom: 0;
+			padding-left: 0;
+			list-style: none;
+
+			li:not(:first-child) {
+				margin-left: 1rem;
+			}
+		}
 	}
 }
 
